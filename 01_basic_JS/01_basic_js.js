@@ -53,7 +53,7 @@ because of issue in block scope and functional scope
 // Data Types
 
 
-"use strict"; // treat all JS code as newer version
+// "use strict"; // treat all JS code as newer version
 
 // alert( 3 + 3) // we are using nodejs, not browser
 
@@ -67,7 +67,7 @@ because of issue in block scope and functional scope
 // let name = "monis"
 // let age = 18
 // let isLoggedIn = false
-let state;
+// let state;
 
 // number => 2 to power 53
 // bigint
