@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTime & SetInterval</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>TypeScript Vs JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let intervalStart;
+    const start=(str)=>{
+        let date = new Date()
+        console.log(str,date.toLocaleTimeString())
+    }
+    
+
+document.getElementById('start').addEventListener('click',()=>{
+    intervalStart = setInterval(start,1000,'Monis')
+})
+document.getElementById('stop').addEventListener('click',()=>{
+    clearInterval(intervalStart);
+})
+
+</script>
+</html>
